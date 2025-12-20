@@ -1,0 +1,6 @@
+mysql-data/
+.git
+.gitignore
+__pycache__/
+*.log
+*.cnf
