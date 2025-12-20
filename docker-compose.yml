@@ -6,10 +6,10 @@ services:
     image: mysql:5.7
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: devops
+      MYSQL_HOST: mysql
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
+      MYSQL_DB: devops
     volumes:
       - ./mysql-data:/var/lib/mysql
       - ./message.sql:/docker-entrypoint-initdb.d/message.sql  
